@@ -27,3 +27,11 @@ tsc --init
   or
 npx tsc --init
 ```
+
+> command to run ts file
+
+```
+tsc filename.ts
+```
+
+** with this the file will generate a .js file which will work **
