@@ -1,0 +1,1 @@
+{"mappings":"AAAA,IAAI,YAAiB;AAErB,YAAY;AAEZ,YAAY;IAAC;IAAG;IAAG;IAAG;CAAE","sources":["src/index.ts"],"sourcesContent":["let firstName: any = \"Mark\";\n\nfirstName = 123;\n\nfirstName = [5, 4, 8, 4];"],"names":[],"version":3,"file":"index.377278e2.js.map","sourceRoot":"/__parcel_source_root/"}
