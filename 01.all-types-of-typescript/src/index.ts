@@ -1,5 +1,90 @@
+// any type
 let firstName: any = "Mark";
 
 firstName = 123;
 
 firstName = [5, 4, 8, 4];
+
+// unknown type
+function multiByTwo(number: unknown) {
+  if (typeof number === "number") {
+    return number * 2;
+  }
+  return "Please provide a valid number";
+}
+
+console.log(multiByTwo(4));
+console.log(multiByTwo("john"));
+
+// boolean type
+let booleanValue: boolean = true;
+
+// Literal values
+booleanValue = false;
+
+// expression of true or false
+booleanValue = typeof "abc" == "string";
+booleanValue = 1 > 0;
+
+/*booleanValue = {};
+booleanValue = "New York";
+
+booleanValue = null;
+booleanValue = undefined;*/
+
+// number type
+
+let number: number = 100;
+
+number = 28.7;
+
+number = -300;
+
+number = Infinity * 0.01;
+
+number = parseInt("12");
+
+// number = "121";
+
+// big int
+
+let bigInt1 = BigInt(945845);
+
+let biInt2 = 123564564n;
+console.log(bigInt1);
+
+const safeInt = Number.MAX_SAFE_INTEGER;
+
+console.log(safeInt);
+
+const safeIntPlusOne = safeInt + 1;
+const safeIntPlusTwo = safeInt + 2;
+
+console.log(safeIntPlusOne);
+console.log(safeIntPlusTwo);
+
+console.log(safeIntPlusOne === safeIntPlusTwo);
+
+let a: bigint = BigInt(1234548);
+
+let b: bigint = 23456465n;
+
+let c: bigint = a - b;
+
+// let e:bigint = 24551.2n;
+// let f = Math.log(a);
+
+// string type
+
+let firstNamee: string = "Mark";
+
+let fullName: string = firstNamee + " " + "Doe";
+
+fullName.split(" ");
+
+//fullName = 123456;
+
+// Math.log(fullName);
+
+
+
