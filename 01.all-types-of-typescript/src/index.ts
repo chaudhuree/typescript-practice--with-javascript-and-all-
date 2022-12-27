@@ -120,6 +120,7 @@ let article: {
   title: string;
   description: string;
   author: string;
+  image?: string;
 };
 
 article = {
@@ -127,3 +128,20 @@ article = {
   description: "Typescript is a superset of javascript",
   author: "Mark",
 };
+
+
+//docs: type alias
+type Article = {
+  title: string;
+  description: string;
+  author: string;
+  image?: string;
+}
+
+let article1: Article = {
+  title: "Typescript",
+  description: "Typescript is a superset of javascript",
+  author: "Mark",
+  image: "http://image.com",}
+
+  // docs: union type
