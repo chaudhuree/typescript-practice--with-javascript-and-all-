@@ -255,3 +255,21 @@ let numstrings: (string | number)[] = [
   "Mark",
   "Doe",
 ];
+
+// docs: tuple type
+// tuple is a fixed length array
+let person1: [string, number] = ["Mark", 35];
+
+// example of tuple
+// [numberOfStudent:number,passingStatus:boolean,"john","doe"]
+
+type students = [number, boolean, ...string[]];
+
+const passingStudents: students = [
+  3,
+  true,
+  "john",
+  "doe",
+  "mark",
+];
+const failingStudents: students = [1, false, "scott"];
