@@ -86,7 +86,7 @@ fullName.split(" ");
 
 // Math.log(fullName);
 
-// type interface in typescript
+// type inferance in typescript
 
 let fname = "chaudhuree";
 const num1 = 10;
@@ -102,3 +102,5 @@ let result: number;
 result = num1 + num2;
 // it is the best practice to let typescript to detect the type of variable
 // if it cannot then we will explicitly declare the type of variable
+
+//docs: object in typescript
