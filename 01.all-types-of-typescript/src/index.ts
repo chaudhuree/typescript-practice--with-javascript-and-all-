@@ -190,3 +190,55 @@ function addThem(a: stringOrNumber, b: stringOrNumber) {
 console.log(addThem("Mark", "Doe"));
 console.log(addThem(1, 2));
 // console.log(addThem(1, null)); // error because null is not a string or number
+
+//docs: type intersection
+type dog1 = {
+  name: string;
+  barks: boolean;
+  wags: boolean;
+};
+
+type cat1 = {
+  name: string;
+  purrs: boolean;
+};
+// com: add both this property in one type
+
+type pet1 = dog1 & cat1;
+
+let myPet1: pet1 = {
+  name: "Tom",
+  barks: true,
+  wags: true,
+  purrs: true,
+};
+
+// docs: index signature
+// imp:
+
+type Airplane = {
+  flightName: string;
+  airplaneModel: string;
+  dateOfDeparture: string;
+  timeOfDeparture: string;
+  from: string;
+  to: string;
+  seat: {
+    [key: string]: string; //indexing: key is string and value is string
+  };
+};
+
+let flight: Airplane = {
+  flightName: "AI-123",
+  airplaneModel: "Boeing 787",
+  dateOfDeparture: "12/12/2020",
+  timeOfDeparture: "12:00",
+  from: "New York",
+  to: "London",
+  seat: {
+    "1A": "Mark",
+    "1B": "Doe",
+    "1C": "John",
+    "1D": "Doe",
+  },
+};
