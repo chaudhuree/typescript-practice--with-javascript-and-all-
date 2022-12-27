@@ -242,3 +242,16 @@ let flight: Airplane = {
     "1D": "Doe",
   },
 };
+
+// docs: array type
+let names: string[] = ["Mark", "Doe", "John", "Doe"];
+let numbers: number[] = [1, 2, 3, 4, 5];
+let numstrings: (string | number)[] = [
+  1,
+  2,
+  3,
+  4,
+  5,
+  "Mark",
+  "Doe",
+];
