@@ -104,3 +104,26 @@ result = num1 + num2;
 // if it cannot then we will explicitly declare the type of variable
 
 //docs: object in typescript
+
+let person: {
+  name: string;
+  age: number;
+} = {
+  name: "Mark",
+  age: 35,
+};
+//imp:
+// in case of type declaration we have to use semi colon
+// but in case of object declaration we have to use comma
+
+let article: {
+  title: string;
+  description: string;
+  author: string;
+};
+
+article = {
+  title: "Typescript",
+  description: "Typescript is a superset of javascript",
+  author: "Mark",
+};
