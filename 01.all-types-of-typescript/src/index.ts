@@ -155,6 +155,7 @@ type cat = {
   name: string;
   purrs: boolean;
 };
+// com: add both this property in one type
 
 type pet = dog | cat;
 
@@ -166,5 +167,12 @@ let myPet: pet = {
 
 let myPetTwo: pet = {
   name: "jerry",
+  purrs: true,
+};
+
+let myhybridPet: pet = {
+  name: "jiko",
+  barks: true,
+  wags: true,
   purrs: true,
 };
