@@ -86,5 +86,19 @@ fullName.split(" ");
 
 // Math.log(fullName);
 
+// type interface in typescript
 
+let fname = "chaudhuree";
+const num1 = 10;
+let num2 = 20;
+// docs: here we have no need to declare any type of variable
+// we can directly declare the variable and assign the value to it
+// typescript will automatically detect the type of variable
+// but let have a variable name result
+let result: number;
+// result does not know its type;
+// so we have to declare the type of result
 
+result = num1 + num2;
+// it is the best practice to let typescript to detect the type of variable
+// if it cannot then we will explicitly declare the type of variable
