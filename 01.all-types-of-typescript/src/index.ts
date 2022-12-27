@@ -129,19 +129,42 @@ article = {
   author: "Mark",
 };
 
-
 //docs: type alias
 type Article = {
   title: string;
   description: string;
   author: string;
   image?: string;
-}
+};
 
 let article1: Article = {
   title: "Typescript",
   description: "Typescript is a superset of javascript",
   author: "Mark",
-  image: "http://image.com",}
+  image: "http://image.com",
+};
 
-  // docs: union type
+// docs: union type
+type dog = {
+  name: string;
+  barks: boolean;
+  wags: boolean;
+};
+
+type cat = {
+  name: string;
+  purrs: boolean;
+};
+
+type pet = dog | cat;
+
+let myPet: pet = {
+  name: "Tom",
+  barks: true,
+  wags: true,
+};
+
+let myPetTwo: pet = {
+  name: "jerry",
+  purrs: true,
+};
