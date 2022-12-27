@@ -273,3 +273,44 @@ const passingStudents: students = [
   "mark",
 ];
 const failingStudents: students = [1, false, "scott"];
+
+// readOnly array
+let names1: readonly string[] = [
+  "Mark",
+  "Doe",
+  "John",
+  "Doe",
+];
+// names1.push("Scott"); // error
+
+type readOnlyArray = readonly [string, string, number]; //fname,lname,age
+
+let names2: readOnlyArray = ["Mark", "Doe", 35];
+
+// another convention of readonly array
+let name3: Readonly<string[]> = [
+  "Mark",
+  "Doe",
+  "John",
+  "Doe",
+];
+// name3.push("Scott"); // error
+
+// docs: enum type
+enum Role {
+  ADMIN = "admin",
+  EDITOR = "editor",
+  AUTHOR = "author",
+}
+
+type Person = {
+  name: string;
+  email: string;
+  role: Role;
+};
+
+let newStuff: Person = {
+  name: "Mark",
+  email: "mark@gmail.com",
+  role: Role.AUTHOR,
+};
