@@ -176,3 +176,17 @@ let myhybridPet: pet = {
   wags: true,
   purrs: true,
 };
+
+// example of union type
+type stringOrNumber = string | number;
+
+function addThem(a: stringOrNumber, b: stringOrNumber) {
+  if (typeof a === "string" || typeof b === "string") {
+    return `${a}${b}`;
+  }
+  return a.toString() + b.toString();
+}
+
+console.log(addThem("Mark", "Doe"));
+console.log(addThem(1, 2));
+// console.log(addThem(1, null)); // error because null is not a string or number
