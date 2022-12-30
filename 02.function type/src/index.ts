@@ -29,4 +29,33 @@ function intro4(name: string, age?: number): string {
   return `My name is ${name}`;
 }
 
+// custom parameter an return type
 
+enum AgeUnit {
+  YEAR = "year",
+  MONTH = "month",
+}
+
+type Person = {
+  name: string;
+  age: number;
+  ageUnit: AgeUnit;
+  country: string;
+};
+
+function ageYearToMonth(person: Person): Person {
+  if (person.ageUnit === AgeUnit.YEAR) {
+    person.ageUnit = AgeUnit.MONTH;
+    person.age = person.age * 12;
+  }
+  return person;
+}
+
+console.log(
+  ageYearToMonth({
+    name: "John",
+    age: 20,
+    ageUnit: AgeUnit.YEAR,
+    country: "USA",
+  })
+);
