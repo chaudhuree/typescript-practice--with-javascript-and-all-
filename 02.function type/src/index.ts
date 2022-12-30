@@ -59,3 +59,25 @@ console.log(
     country: "USA",
   })
 );
+
+// function call signature
+type Greeting = (greeting: string) => string; //not used, but can use
+type AnotherPerson = {
+  name: string;
+  age: number;
+  ageUnit: AgeUnit;
+  country: string;
+  // greet: Greeting;
+  greet: (greeting: string) => string;
+};
+
+const anotherPerson: AnotherPerson = {
+  name: "John",
+  age: 20,
+  ageUnit: AgeUnit.YEAR,
+  country: "USA",
+  greet: (greeting) => {
+    return `${greeting} ${anotherPerson.name}`;
+  },
+};
+console.log(anotherPerson.greet("Hello"));
